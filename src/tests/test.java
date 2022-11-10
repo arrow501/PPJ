@@ -1,5 +1,7 @@
 package tests;
 
+import java.util.Arrays;
+
 public class test {
     public static void main(String[] args) {
 
@@ -29,6 +31,7 @@ public class test {
                 System.out.println("element wyst?puje " + suma + " raz");
                 suma = 0;
                 arr[counter] = 0;
+                System.out.println(Arrays.toString(arr));
 
             } else {
                 System.out.println("element nie wystepuje ani razu");
