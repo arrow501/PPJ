@@ -18,16 +18,15 @@ public class Task1 {
         }
         System.out.println(Arrays.toString(arr));
         for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr.length; j++) {
-                if(i == arr[j]){
+            for (int k : arr) {
+                if (i == k) {
                     System.out.print("*  ");
-                } else{
+                } else {
                     System.out.print(".  ");
                 }
             }
             System.out.println();
 
         }
-        // komentarz
     }
 }
