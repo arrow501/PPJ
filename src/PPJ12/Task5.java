@@ -1,27 +1,14 @@
 package PPJ12;
 
-import java.util.Arrays;
-
 public class Task5 {
     public static void main(String[] args) {
         int[] arr = {153, 333, 370, 515, 407, 80};
         for (int number : arr) {
-            int n_digits = 0;
-            int temp_number = number;
-            while(temp_number >= 1){
-                n_digits += 1;
-                temp_number /= 10;
-            }
-            temp_number = number;
-            int[] digits = new int[n_digits];
-            for (int i = n_digits - 1; i >= 0; i--) {
-                digits[i] = temp_number%10;
-                temp_number /= 10;
-            }
+            int [] digits = toDigitArray(number);
             //System.out.println(Arrays.toString(digits));
             int sum = 0;
             for(int digit: digits){
-                sum += pow(digit, n_digits);
+                sum += pow(digit, digits.length);
             }
             //System.out.println(sum);
             if(sum == number)
@@ -37,5 +24,21 @@ public class Task5 {
             result *= x;
         }
         return result;
+    }
+    public static int[] toDigitArray(int number){
+        int n_digits = 0;
+        int temp_number = number;
+        while(temp_number >= 1){
+            n_digits += 1;
+            temp_number /= 10;
+        }
+
+        temp_number = number;
+        int[] digits = new int[n_digits];
+        for (int i = n_digits - 1; i >= 0; i--) {
+            digits[i] = temp_number%10;
+            temp_number /= 10;
+        }
+        return digits;
     }
 }
