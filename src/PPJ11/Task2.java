@@ -4,18 +4,18 @@ import java.util.Arrays;
 
 public class Task2 {
     public static void main(String[] args) {
-//        int[] arr1 = new int[10];
-//        int[] arr2 = new int [5];
-//        for(int i = 0; i < arr1.length; i++){
-//            arr1[i] = (int)(Math.random()*100);
-//        }
-//        System.out.println("arr1:\t" + Arrays.toString(arr1));
-//        for(int i = 0; i < arr2.length; i++){
-//            arr2[i] = (int)(Math.random()*100);
-//        }
-//        System.out.println("arr2:\t" + Arrays.toString(arr2));
-        int[] arr1 = {3,3,3};
-        int[] arr2 = {3,3,3};
+       int[] arr1 = new int[10];
+       int[] arr2 = new int [5];
+       for(int i = 0; i < arr1.length; i++){
+           arr1[i] = (int)(Math.random()*100);
+       }
+       System.out.println("arr1:\t" + Arrays.toString(arr1));
+       for(int i = 0; i < arr2.length; i++){
+           arr2[i] = (int)(Math.random()*100);
+       }
+       System.out.println("arr2:\t" + Arrays.toString(arr2));
+        //int[] arr1 = {3,3,3};
+        //int[] arr2 = {3,3,3};
 
         int[] arr_merge = new int[arr1.length + arr2.length];
         for(int i = 0; i < arr_merge.length; i++){
@@ -32,12 +32,12 @@ public class Task2 {
         int[] arr_and = new int[arr1.length];
         int current_index = 0;
 
-        addelement:
+        addElement:
         for(int e1: arr1){
             for(int e2: arr2){
                 if(e1 == e2){
                     arr_and[current_index++] = e1;
-                    continue addelement;
+                    continue addElement;
                 }
             }
         }
