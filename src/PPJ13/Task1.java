@@ -7,8 +7,25 @@ public class Task1 {
         int[] tab = getRandomArr(100, 1,10 );// = {1, 1, 2, 3, 3};
 
         tab = bubbleSort(tab);
-        System.out.println(countOfUniqueNumbers(tab));
-        System.out.println(Arrays.toString(tab));
+        // System.out.println(countOfUniqueNumbers(tab));
+        // System.out.println(Arrays.toString(tab));
+        int[] uniqueArray = getArrOfUniqueNumbers(tab);
+        System.out.println("There are " +uniqueArray.length + " unique numbers: " + Arrays.toString(uniqueArray));
+    }
+    public static int[] getArrOfUniqueNumbers(int[] arr){
+        if(arr.length == 0) return new int[0];
+        int counter = 0;
+        for (int i = 1; i < arr.length; i++) {
+            if(arr[i] > arr[counter]){
+                counter++;
+                arr[counter] = arr[i]; // push unique numbers to the start of arr
+            }
+        }
+        int[] uniqueArr = new int[counter + 1];
+        for (int i = 0; i < uniqueArr.length; i++) {
+            uniqueArr[i] = arr[i]; // copy the beginning that we set earlier
+        }
+        return uniqueArr;
     }
 
     public static int countOfUniqueNumbers(int[] arr) {
