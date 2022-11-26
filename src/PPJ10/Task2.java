@@ -5,8 +5,7 @@ public class Task2 {
         java.util.Scanner scanner = new java.util.Scanner(System.in);
         int n = scanner.nextInt();
         scanner.close();
-        // Equation 1
-        // TODO: Doesn't work all of the time
+        
         {
             long sum = 0;
             for (int i = 1; i <= n; i++) {

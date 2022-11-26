@@ -8,7 +8,6 @@ public class Task1 {
         int alpha = scanner.nextInt(),
                 beta = scanner.nextInt(),
                 gamma = scanner.nextInt();
-                
         scanner.close();
 
         if(alpha+beta+gamma == 180) {
