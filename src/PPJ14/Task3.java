@@ -3,7 +3,7 @@ package PPJ14;
 public class Task3 {
     public static void main(String[] args) {
         int size = 4;
-        int[][] arr = Task4.getSequentialSquare(size);
+        //int[][] arr = Task4.getSequentialSquare(size);
         int failures = 0;
         do{
             int x = (int)(Math.random()*(1.2 + 0.2) - (0.2)) * size;
