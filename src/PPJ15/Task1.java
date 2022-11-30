@@ -7,9 +7,7 @@ public class Task1 {
         int[][] tab = { { 1, 0, 0, 0, 0 }, { 0, 1, 0, 0 }, { 0, 0, 1 } };
         int newTabLength = 0;
         for (int[] sub_array : tab) {
-            for (int i : sub_array) {
-                newTabLength++;
-            }
+            newTabLength += sub_array.length;
         }
         int[] newTab = new int[newTabLength];
         int currentIndex = 0;
