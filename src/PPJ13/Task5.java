@@ -10,7 +10,7 @@ final class Input {
     }
 }
 
-public class Task4 {
+public class Task5 {
     static Integer[] tab = { null, null, null };
     static boolean endProgram = false;
     static int currentIndex = 0;
@@ -39,13 +39,13 @@ public class Task4 {
                 System.out.print("[" + number + "]");
             }
         }
-        System.out.println("");
+        System.out.println();
     }
 
     private static Input read() {
         try {
             String input = in.nextLine();
-            if (input.equals("help")) {
+            if (input.toLowerCase().equals("help")) {
                 help();
                 return read();
             }
@@ -80,10 +80,7 @@ public class Task4 {
     }
 
     private static void add(int number) {
-        if (currentIndex >= tab.length) {
-            System.out.println("No space left for new numbers.");
-            return;
-        }
+        if (currentIndex >= tab.length) expand();
         tab[currentIndex] = number;
         currentIndex++;
         print();
@@ -98,5 +95,12 @@ public class Task4 {
         System.out.println("> " + tab[currentIndex]);
         tab[currentIndex] = null;
         print();
+    }
+    private static void expand(){
+        Integer[] newTab = new Integer[tab.length+3];
+        for (int i = 0; i < tab.length; i++) {
+            newTab[i] = tab[i];
+        }
+        tab = newTab;
     }
 }
