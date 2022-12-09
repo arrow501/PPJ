@@ -7,7 +7,6 @@ public class Task3 {
     }
     public static boolean isArmstrongNumber(int number) {
         int[] digits = Task2.splitToDigits(number);
-        //System.out.println(Arrays.toString(digits));
         int sum = 0;
         for (int digit : digits) {
             sum += pow(digit, digits.length);
