@@ -2,7 +2,7 @@ package PPJ16;
 
 public class Task4 {
     public static void main(String[] args) {
-        int [][] positions = calculateSquares(100, 100, 50);
+        int [][] positions = calculateSquares(35, 30, 10);
         for( int[] coords: positions){
             System.out.println("x: " + coords[0] + "\ty: " + coords[1]);
         }
