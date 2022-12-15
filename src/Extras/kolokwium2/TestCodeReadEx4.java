@@ -1,12 +1,10 @@
 package Extras.kolokwium2;
 
-import javax.swing.UIDefaults.ProxyLazyValue;
-
 public class TestCodeReadEx4 {
     public static void main(String[] args) {
         method(5);
         System.out.println();
-        nonrecursive();
+        nonRecursive();
     }
     public static void method(int n) {
         if (n <= 0){
@@ -17,7 +15,7 @@ public class TestCodeReadEx4 {
             System.out.print(n + "\t");
         }
     }
-    public static void nonrecursive(){
+    public static void nonRecursive(){
 
         System.out.print(0 + " ");
         System.out.print(0 + " ");

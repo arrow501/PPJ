@@ -1,11 +1,7 @@
 package Extras.kolokwium2;
 
 import java.util.Arrays;
-
-import org.w3c.dom.Attr;
-
 import Toolbox.PPJutils;
-import Toolbox.Toolbox;
 
 public class TestCodeWriteEx1 {
     public static void main(String[] args) {
@@ -63,7 +59,7 @@ public class TestCodeWriteEx1 {
         System.out.println("\nBubblesort:\n");
 
         int[] randomArray = PPJutils.getRandomIntArray(0, 1000, 10);
-        
+
         int[] tab = Arrays.copyOf(randomArray, randomArray.length);
         System.out.println("unsorted: " + Arrays.toString(tab));
         bubblesort(tab);
