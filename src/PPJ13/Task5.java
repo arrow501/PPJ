@@ -1,4 +1,5 @@
 package PPJ13;
+
 public class Task5 {
     static Integer[] tab = { null, null, null };
     static boolean endProgram = false;
