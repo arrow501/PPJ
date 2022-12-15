@@ -317,7 +317,6 @@ public class Toolbox {
             n = n - 1;
         } while (n > 1);
         return arr;
-    
-
+    }
 }
 

@@ -3,7 +3,7 @@ import Toolbox.Toolbox;
 
 public class Task5 {
     public static void main(String[] args) {
-        int[][] tab = new int[9][9];
+        int[][] tab = new int[5][5];
         fillArrayLayersInward(tab, 0, 1);
         Toolbox.showArr(tab);
 
