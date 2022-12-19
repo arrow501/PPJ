@@ -1,6 +1,10 @@
 {
     "java.format.settings.url": ".vscode/java-formatter.xml",
     "cSpell.words": [
+        "Kula",
+        "Kwadrat",
+        "Walec",
         "Warcaby"
-    ]
+    ],
+    "java.debug.settings.onBuildFailureProceed": true
 }
