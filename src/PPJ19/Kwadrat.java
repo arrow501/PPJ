@@ -6,6 +6,9 @@ public class Kwadrat {
     public Kwadrat(double side) {
         this.side = side;
     }
+    public double getSide(){
+        return this.side;
+    }
 
     public double getSurfaceArea() {
         return this.side * this.side;
