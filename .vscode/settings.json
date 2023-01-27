@@ -1,11 +1,19 @@
 {
     "java.format.settings.url": ".vscode/java-formatter.xml",
     "cSpell.words": [
+        "anulowany",
         "Kula",
         "Kwadrat",
         "Ligma",
+        "mało",
+        "nazwa",
+        "numerki",
+        "Paliwa",
+        "Rakieta",
+        "waga",
         "Walec",
-        "Warcaby"
+        "Warcaby",
+        "zatankuj"
     ],
     "java.debug.settings.onBuildFailureProceed": true
 }
