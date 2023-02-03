@@ -22,6 +22,7 @@ public class Main {
                     characters.put(inputChar, 1);
                 }
             }
+            in.close();
         } catch( Exception e){
             System.out.println("error");
         }

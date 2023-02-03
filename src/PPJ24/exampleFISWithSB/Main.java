@@ -12,6 +12,7 @@ public class Main {
                 sb.append((char)c);
             }
             System.out.println(sb.toString());
+            fis.close();
         } catch (Exception e) {
             System.err.println("Error: file reading failed");
         }
